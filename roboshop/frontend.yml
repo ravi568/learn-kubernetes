@@ -7,7 +7,7 @@ metadata:
 spec:
   containers:
     - name: frontend
-      image: 271551280472.dkr.ecr.us-east-1.amazonaws.com/frontend:2.0.0
+      image: 271551280472.dkr.ecr.us-east-1.amazonaws.com/frontend:2.0.1
 
 ---
 apiVersion: v1
