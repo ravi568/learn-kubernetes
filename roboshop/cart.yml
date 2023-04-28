@@ -6,3 +6,5 @@ spec:
   containers:
     - name: frontend
       image: 271551280472.dkr.ecr.us-east-1.amazonaws.com/cart:2.0.0
+
+
