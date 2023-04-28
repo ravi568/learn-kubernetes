@@ -4,5 +4,5 @@ metadata:
   name: frontend
 spec:
   containers:
-    - name: nginx
-      image: nginx:1.14.2
+    - name: frontend
+      image: 271551280472.dkr.ecr.us-east-1.amazonaws.com/frontend:2.0.0
