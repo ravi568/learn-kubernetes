@@ -16,10 +16,20 @@ spec:
   containers:
     - name: frontend
       image: 271551280472.dkr.ecr.us-east-1.amazonaws.com/cart:2.0.0
+      volumeMounts:
+        - mountPath: /params
+          name: params
   initContainers:
     - name: aws-ssm-param-store
       image: 271551280472.dkr.ecr.us-east-1.amazonaws.com/aws-ssm-param-store:2.0.0
       args: ["sample:dev.docdb.pass"]
+      volumeMounts:
+        - mountPath: /params
+          name: params
+  volumes:
+    - name: params
+      emptyDir:
+        sizeLimit: 100Mi
 ---
 apiVersion: v1
 kind: Service
