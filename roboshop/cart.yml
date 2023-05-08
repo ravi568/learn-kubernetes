@@ -4,10 +4,7 @@ metadata:
   name: cart
   annotations:
     eks.amazonaws.com/role-arn: arn:aws:iam::271551280472:role/ssm-for-eks
-  spec:
-    serviceAccountName: cart
 ---
-
 apiVersion: v1
 kind: Pod
 metadata:
